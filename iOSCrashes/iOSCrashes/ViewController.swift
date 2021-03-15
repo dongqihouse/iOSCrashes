@@ -11,8 +11,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("main stack size: \(Thread.main.stackSize)")
-        StackOverflow().notCrash()
+//        print("main stack size: \(Thread.main.stackSize)")
+//        StackOverflow().notCrash()
+        
+        let zombie = ZombieObject()
+        
+        zombie.zombie()
     }
 
 
